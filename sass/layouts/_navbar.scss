@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    &__links{
+        display: flex; 
+        align-items: center;
+        list-style: none;  
+        li{
+           a{
+                color: $color-brown;
+                font-weight: bold;
+                font-size: 1.15rem;
+                padding: 0.5rem 2rem;
+                margin: 0 2rem;
+                &:hover{
+                   color:$color-white;
+                }
+                &:focus{
+                    background-color: $color-brown;
+                    color:$color-white;
+                    border-radius: 50px;
+                }
+           }
+        }      
+    }
+}

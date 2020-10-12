@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url("/fonts/Gilroy/Gilroy-Light.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url("/fonts/Gilroy/Gilroy-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FEC72E;
+  color: #755534;
+  font-family: 'Gilroy-Light';
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.navbar__links li a {
+  color: #755534;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: 0.5rem 2rem;
+  margin: 0 2rem;
+}
+
+.navbar__links li a:hover {
+  color: #FFFFFF;
+}
+
+.navbar__links li a:focus {
+  background-color: #755534;
+  color: #FFFFFF;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
